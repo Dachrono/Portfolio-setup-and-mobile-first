@@ -1,0 +1,108 @@
+body
+{
+    align-items: center;
+}
+
+.NavBar
+{
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    display: flex;
+}
+
+.Link
+{
+    display: none;
+}
+
+.NavBar a
+{
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.NavBar a.icon
+{
+    background: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.NavBar a:hover 
+{
+    background-color: #172B4D;
+    color: #36B37E;
+}
+
+.container
+{
+    width: 100%;
+    background-image: url(Pics/Background.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+#a
+{
+    color: #172B4D;
+}
+
+#b
+{
+    color: #36B37E;
+}
+
+#c
+{
+    color: #172B4D;
+}
+
+.social img
+{
+   margin-left: 10px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px)
+{
+    .title
+    {
+        margin-top: 60px;
+        width: 80%;
+        font-family: 'Inter';
+        font-style: normal; 
+    }
+
+    #a
+    {
+      margin: 0px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    #b
+    {
+      margin: 0px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    #c
+    {
+      font-size: 20px;
+      font-weight: 400;
+    }
+}
+
