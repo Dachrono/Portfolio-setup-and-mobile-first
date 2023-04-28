@@ -2,6 +2,7 @@ body {
   align-items: center;
   font-family: 'Inter', sans-serif;
   font-style: normal;
+  margin: 0;
 }
 
 .NavBar {
@@ -61,6 +62,8 @@ h3 {
 
 #c {
   color: #172b4d;
+  line-height: 28px;
+  width: 327px;
 }
 
 ul {
@@ -101,3 +104,4 @@ li {
     font-weight: 400;
   }
 }
+
