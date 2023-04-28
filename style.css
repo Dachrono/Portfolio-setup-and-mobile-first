@@ -1,5 +1,7 @@
 body {
   align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
 }
 
 .NavBar {
@@ -37,13 +39,13 @@ body {
 .container {
   width: 100%;
   background-image: url(Pics/Background.png);
-  background-size: cover;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-p {
+h1, h2, h3 {
   text-align: center;
 }
 
@@ -59,16 +61,25 @@ p {
   color: #172b4d;
 }
 
+ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  float: right;
+}
+
 .social img {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .title {
     margin-top: 60px;
     width: 80%;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
   }
 
   #a {
