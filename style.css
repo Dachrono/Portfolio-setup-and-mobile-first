@@ -41,14 +41,14 @@ body {
   width: 100%;
   background-image: url(Pics/Background.png);
   background-size: 100%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h1,
-h2,
-h3 {
+.title h1,
+.title h2 {
   text-align: center;
 }
 
@@ -62,8 +62,8 @@ h3 {
 
 #c {
   color: #172b4d;
+  text-align: center;
   line-height: 28px;
-  width: 327px;
 }
 
 ul {
@@ -102,5 +102,47 @@ li {
   #c {
     font-size: 20px;
     font-weight: 400;
+    width: 327px;
   }
+}
+
+.About {
+  background-image: url(Pics/Background2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.About h1 {
+  color: #172b4d;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.About p {
+  width: 90%;
+  padding-left: 5%;
+  color: #42526e;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.About button {
+  padding: 12px;
+  gap: 10px;
+  background-color: #36b37f;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 0;
+  width: 153px;
+  height: 48px;
+  color: white;
 }
