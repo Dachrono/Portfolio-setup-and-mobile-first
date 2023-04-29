@@ -122,10 +122,44 @@ body {
   border: 1px solid #dfe1e6;
 }
 
-.WorksCard {
-  margin-top: 30px;
-  margin-left: 5%;
-  margin-right: 5%;
+.Cards {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  row-gap: 30px;
+}
+
+.WorksCard1 {
+  grid-area: 1/2/2/3;
+}
+
+.WorksCard2 {
+  grid-area: 2/2/3/3;
+}
+
+.WorksCard3 {
+  grid-area: 3/2/4/3;
+}
+
+.WorksCard4 {
+  grid-area: 4/2/5/3;
+}
+
+.WorksCard5 {
+  grid-area: 5/2/6/3;
+}
+
+.WorksCard6 {
+  grid-area: 6/2/7/3;
+}
+
+.WorksCard1,
+.WorksCard2,
+.WorksCard3,
+.WorksCard4,
+.WorksCard5,
+.WorksCard6 {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
   display: flex;
@@ -151,7 +185,7 @@ body {
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 30px;
+  gap: 15px;
   flex-direction: row;
   justify-content: center;
 }
@@ -159,8 +193,7 @@ body {
 .cd3 button{
   color: #3a4a42;
   font-weight: 600;
-  margin: 3%;
-  width: 60px;
+  width: 65px;
   height: 32px;
   padding: 0;
   border: 0;
