@@ -75,7 +75,7 @@ body {
 
 .container li {
   float: right;
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -114,7 +114,7 @@ body {
   color: #172b4d;
 }
 
-.Works button{
+.Works button {
   background-color: white;
   width: 40px;
   height: 40px;
@@ -180,7 +180,7 @@ body {
   color: #3a4a42;
 }
 
-.cd3{
+.cd3 {
   width: 100%;
   list-style: none;
   padding: 0;
@@ -190,7 +190,7 @@ body {
   justify-content: center;
 }
 
-.cd3 button{
+.cd3 button {
   color: #3a4a42;
   font-weight: 600;
   width: 65px;
@@ -216,7 +216,6 @@ body {
   height: 48px;
   color: white;
 }
-
 
 .About {
   background-image: url(Pics/Background2.png);
@@ -263,7 +262,7 @@ body {
 .About2 {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
 
 .About2 h1 {
@@ -274,20 +273,18 @@ body {
   width: 90px;
 }
 
-.con { 
+.con {
   width: 327px;
   height: 316px;
-  padding: 0px;
+  padding: 0;
   text-align: center;
-  background-color: #ebF0ee;
-  
+  background-color: #ebf0ee;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   list-style: none;
-
-  border: 1px solid #C1C7D0;
+  border: 1px solid #c1c7d0;
   border-radius: 8px;
 }
 
@@ -300,7 +297,7 @@ body {
   list-style: none;
 }
 
-#but{
+#but {
   margin: 5px;
 }
 
