@@ -66,19 +66,16 @@ body {
   line-height: 28px;
 }
 
-ul {
+.container ul {
   display: flex;
   align-items: center;
   padding: 0;
   list-style: none;
 }
 
-li {
+.container li {
   float: right;
-}
-
-.social img {
-  margin-left: 20px;
+  margin-left: 10px; 
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -106,6 +103,88 @@ li {
   }
 }
 
+.Works {
+  display: grid;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.Works h1 {
+  color: #172b4d;
+}
+
+.Works button{
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+  border: 1px solid #dfe1e6;
+}
+
+.WorksCard {
+  margin-top: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cd1 {
+  width: 100%;
+  background-color: #ebf0ee;
+  text-align: center;
+  height: 200px;
+}
+
+.cd2 {
+  width: 100%;
+  text-align: center;
+  color: #3a4a42;
+}
+
+.cd3{
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cd3 button{
+  color: #3a4a42;
+  font-weight: 600;
+  margin: 3%;
+  width: 60px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+}
+
+.cd4 {
+  margin: 20px;
+}
+
+.cd4 button {
+  padding: 12px;
+  gap: 10px;
+  background-color: #36b37f;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 0;
+  width: 153px;
+  height: 48px;
+  color: white;
+}
+
+
 .About {
   background-image: url(Pics/Background2.png);
   background-size: 100%;
@@ -113,6 +192,7 @@ li {
   display: flex;
   text-align: center;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .About h1 {
@@ -145,4 +225,56 @@ li {
   width: 153px;
   height: 48px;
   color: white;
+}
+
+.About2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.About2 h1 {
+  color: #344563;
+}
+
+.About2 img {
+  width: 90px;
+}
+
+.con { 
+  width: 327px;
+  height: 316px;
+  padding: 0px;
+  text-align: center;
+  background-color: #ebF0ee;
+  
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+
+  border: 1px solid #C1C7D0;
+  border-radius: 8px;
+}
+
+.con2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3%;
+  padding: 0;
+  list-style: none;
+}
+
+#but{
+  margin: 5px;
+}
+
+.con button {
+  width: 89px;
+  height: 40px;
+  background-color: white;
+  color: #36b37e;
+  border: 0;
 }
