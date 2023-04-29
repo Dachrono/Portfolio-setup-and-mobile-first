@@ -167,20 +167,20 @@ body {
   align-items: center;
 }
 
-.cd1 {
+.card1 {
   width: 100%;
   background-color: #ebf0ee;
   text-align: center;
   height: 200px;
 }
 
-.cd2 {
+.card2 {
   width: 100%;
   text-align: center;
   color: #3a4a42;
 }
 
-.cd3 {
+.card3 {
   width: 100%;
   list-style: none;
   padding: 0;
@@ -190,20 +190,20 @@ body {
   justify-content: center;
 }
 
-.cd3 button {
+.card3 button {
   color: #3a4a42;
   font-weight: 600;
-  width: 65px;
+  width: 60px;
   height: 32px;
   padding: 0;
   border: 0;
 }
 
-.cd4 {
+.card4 {
   margin: 20px;
 }
 
-.cd4 button {
+.card4 button {
   padding: 12px;
   gap: 10px;
   background-color: #36b37f;
@@ -259,17 +259,17 @@ body {
   color: white;
 }
 
-.About2 {
+.ACards {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.About2 h1 {
+.ACards h1 {
   color: #344563;
 }
 
-.About2 img {
+.ACards img {
   width: 90px;
 }
 
@@ -297,7 +297,7 @@ body {
   list-style: none;
 }
 
-#but {
+.but {
   margin: 5px;
 }
 
