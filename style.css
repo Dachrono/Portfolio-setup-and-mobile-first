@@ -308,3 +308,92 @@ body {
   color: #36b37e;
   border: 0;
 }
+
+.ContForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+  background-image: url(Pics/ImgFooter.png);
+  background-position: 100% 90%;
+  background-repeat: no-repeat;
+}
+
+.advise {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.contact {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.contact textarea {
+  height: 114px;
+  padding-top: 1em;
+  padding-left: 1em;
+  border: 1px solid #60c095;
+  border-radius: 4px;
+}
+
+.Fullname,
+.EmailAddress {
+  font-style: italic;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  height: 48px;
+  padding: 1em;
+}
+
+.formButton {
+  height: 48px;
+  width: 105px;
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  line-height: 24px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.formButton:hover {
+  box-shadow: 0.1px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.formButton:active {
+  background-color: #008552;
+}
+
+.socialFooter {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+  justify-content: center;
+}
+
+.myEmail {
+  font-size: 20px;
+  font-weight: 400;
+  color: #42526e;
+  line-height: 32px;
+}
+
+.line {
+  margin-top: 2em;
+  margin-bottom: 5px;
+  height: 4px;
+  width: 30%;
+  background: #172b4d;
+  border-radius: 8px;
+}
