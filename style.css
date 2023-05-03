@@ -349,3 +349,49 @@ body {
   height: 48px;
   padding: 1em;
 }
+
+.formButton {
+  height: 48px;
+  width: 105px;
+  background-color: #36b37f;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  line-height: 24px;
+  font-weight: 500;
+  align-self: center;
+}
+
+.formButton:hover {
+  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.formButton:active {
+ background-color: #008552;
+}
+
+.socialFooter {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.myEmail {
+  font-size: 20px;
+  font-weight: 400;
+  color: #42526e;
+  line-height: 32px;
+}
+
+.socialFooter {
+  list-style: none;
+  max-width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+}
