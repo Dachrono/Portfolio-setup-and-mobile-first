@@ -6,13 +6,13 @@ body {
 }
 
 .NavBar {
-  overflow: hidden;
-  position: relative;
+  width: 100%;
   padding: 10px;
   display: flex;
+  justify-content: end;
 }
 
-.Link {
+.link {
   display: none;
 }
 
@@ -22,14 +22,6 @@ body {
   text-decoration: none;
   font-size: 17px;
   display: block;
-}
-
-.NavBar a.icon {
-  background: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
 .NavBar a:hover {
@@ -42,6 +34,7 @@ body {
   background-image: url(Pics/Background.png);
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position-y: -100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,20 +43,22 @@ body {
 .title h1,
 .title h2 {
   text-align: center;
+  letter-spacing: 0.37px;
 }
 
-#a {
+#title-a {
   color: #172b4d;
+  font-style: normal;
 }
 
-#b {
+#title-b {
   color: #36b37e;
+  font-style: normal;
 }
 
-#c {
+#title-c {
   color: #172b4d;
   text-align: center;
-  line-height: 28px;
 }
 
 .container ul {
@@ -73,48 +68,11 @@ body {
   list-style: none;
 }
 
-.container li {
-  float: right;
-  margin-left: 10px;
+.social img {
+  padding: 10px;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
-  .title {
-    margin-top: 60px;
-    width: 80%;
-  }
-
-  #a {
-    margin: 1px;
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  #b {
-    margin: 1px;
-    font-size: 40px;
-    font-weight: 700;
-  }
-
-  #c {
-    font-size: 20px;
-    font-weight: 400;
-    width: 327px;
-  }
-}
-
-.Works {
-  display: grid;
-  margin-top: 25px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.Works h1 {
-  color: #172b4d;
-}
-
-.Works button {
+.container button {
   background-color: white;
   width: 40px;
   height: 40px;
@@ -122,11 +80,19 @@ body {
   border: 1px solid #dfe1e6;
 }
 
+.Works {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-style: normal;
+  color: #172b4d;
+}
+
 .Cards {
   display: grid;
-  width: 100%;
   grid-template-columns: 10% 80% 10%;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   row-gap: 30px;
 }
 
@@ -162,6 +128,7 @@ body {
 .WorksCard6 {
   border: 1px solid #d0d9d4;
   border-radius: 8px;
+  color: #172b4d;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,13 +148,27 @@ body {
 }
 
 .card3 {
-  width: 100%;
+  width: 90%;
   list-style: none;
   padding: 0;
   display: flex;
   gap: 15px;
-  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card3 li {
+  height: 32px;
+  padding: 1px 3px 1px 3px;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .card3 button {
@@ -273,7 +254,7 @@ body {
   width: 90px;
 }
 
-.con {
+.ACards-cont {
   width: 327px;
   height: 316px;
   padding: 0;
@@ -288,25 +269,30 @@ body {
   border-radius: 8px;
 }
 
-.con2 {
+.ACards-cont2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
   margin: 3%;
   padding: 0;
   list-style: none;
 }
 
-.but {
-  margin: 5px;
-}
-
-.con button {
-  width: 89px;
+.ACards-cont2 li {
   height: 40px;
+  margin: 3px;
+  padding: 1px 3px 1px 3px;
   background-color: white;
   color: #36b37e;
   border: 0;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .ContForm {
@@ -317,6 +303,12 @@ body {
   background-image: url(Pics/ImgFooter.png);
   background-position: 100% 90%;
   background-repeat: no-repeat;
+}
+
+.ContForm-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .advise {
@@ -374,14 +366,6 @@ body {
   background-color: #008552;
 }
 
-.socialFooter {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  gap: 0.8em;
-  justify-content: center;
-}
-
 .myEmail {
   font-size: 20px;
   font-weight: 400;
@@ -396,4 +380,192 @@ body {
   width: 30%;
   background: #172b4d;
   border-radius: 8px;
+}
+
+@media screen and (min-width: 375px) {
+  .title {
+    margin-top: 60px;
+    width: 80%;
+  }
+
+  #title-a {
+    margin: 1px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  #title-b {
+    margin: 1px;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  #title-c {
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .Works {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-image: url(Pics/BackgroundWD.png);
+    background-size: 100% 100%;
+    background-position: top;
+    height: 500px;
+  }
+
+  .link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .link a {
+    font-size: 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .title {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #title-a,
+  #title-b {
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  #title-c {
+    justify-content: center;
+    text-align: center;
+    width: 90%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .social {
+    margin: 0.1px;
+  }
+
+  .social img {
+    width: 10px;
+  }
+
+  .container button {
+    margin-top: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .socialButton img {
+    width: 6px;
+  }
+
+  .Works {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 42px;
+  }
+
+  .Cards {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .WorksCard1 {
+    grid-area: 1/1/ span 1/ span 1;
+  }
+
+  .WorksCard2 {
+    grid-area: 1/2/ span 1/ span 1;
+  }
+
+  .WorksCard3 {
+    grid-area: 1/3/ span 1/ span 1;
+  }
+
+  .WorksCard4 {
+    grid-area: 2/1/ span 1/ span 1;
+  }
+
+  .WorksCard5 {
+    grid-area: 2/2/ span 1/ span 1;
+  }
+
+  .WorksCard6 {
+    grid-area: 2/3/ span 1/ span 1;
+  }
+
+  .About {
+    background-image: url(Pics/BackgroundWD2.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .About div {
+    width: 80%;
+  }
+
+  .ACards {
+    margin: 0.1px;
+    padding: 0% 5%;
+    width: 90%;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .ContForm {
+    background:
+      url(Pics/backgWD3.png) no-repeat 0% 90%,
+      url(Pics/backgWD2.png) no-repeat 30% 90%,
+      url(Pics/backgWD1.png) no-repeat 100% 90%;
+    margin: 0.1px;
+    margin-top: 80px;
+    padding: 0% 5%;
+    width: 90%;
+  }
+
+  .ContForm-cont {
+    margin-bottom: 180px;
+    flex-direction: row;
+  }
+
+  .contact button {
+    align-self: self-start;
+  }
+
+  .myEmail,
+  .line {
+    display: none;
+  }
+
+  .final {
+    width: 100%;
+    margin: 0.1px;
+    border-top: 1px solid #dfe1e6;
+    display: flex;
+    justify-content: center;
+  }
 }
