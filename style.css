@@ -98,6 +98,12 @@ body {
   text-align: center;
   font-style: normal;
   color: #172b4d;
+  transition: width 2s linear 1s;
+}
+
+.Works :hover {
+  width: 500px;
+  font-size: 50px;
 }
 
 .Cards {
