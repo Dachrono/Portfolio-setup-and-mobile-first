@@ -68,6 +68,24 @@ body {
   list-style: none;
 }
 
+#title-a:hover {
+  position: relative;
+  animation: movement 3s linear infinite alternate;
+}
+
+@keyframes movement {
+  from {
+    background-color: #36b37e;
+    left: 0.1px;
+    top: 0.1px;
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .social img {
   padding: 10px;
 }
@@ -87,6 +105,12 @@ body {
   text-align: center;
   font-style: normal;
   color: #172b4d;
+  transition: width 2s linear 1s;
+}
+
+.Works :hover {
+  width: 500px;
+  font-size: 50px;
 }
 
 .Cards {
@@ -238,6 +262,11 @@ body {
   width: 153px;
   height: 48px;
   color: white;
+  transition: transform 1s ease-in-out;
+}
+
+.About button:hover {
+  transform: scale(1.2);
 }
 
 .ACards {
