@@ -70,13 +70,20 @@ body {
 
 #title-a:hover {
   position: relative;
-  animation: movement 5s linear infinite alternate;
+  animation: movement 3s linear infinite alternate;
 }
 
 @keyframes movement {
-  0% {background-color: gray; left: 0px; top: 0px}
-  25% {background-color: #36b37e; left: 100px; top: 0px}
-  75% {background-color: #172b4d; left: 0px; top: 0px}
+  from {
+    background-color: #36b37e;
+    left: 0.1px;
+    top: 0.1px;
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .social img {
