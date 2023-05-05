@@ -249,6 +249,11 @@ body {
   width: 153px;
   height: 48px;
   color: white;
+  transition: transform 1s ease-in-out;
+}
+
+.About button:hover {
+  transform: scale(1.2);
 }
 
 .ACards {
